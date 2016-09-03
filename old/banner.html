@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type = "text/javascript">
+var n = 0;
+var t = 0;
+function change()
+{	if(n%5==0) document.getElementById("heading").style.color = 'rgb(' + (40+Math.round(Math.random()*215)) + ',' + (100+Math.round(Math.random()*155))+','+(100+Math.round(Math.random()*155)) +')';
+	n = n+1;
+	if(n>100) n = 0;
+	if(n<10) num = "00"+n;
+	else if(n<100) num = "0"+n;
+	else num = "100";
+	//document.getElementById("logo").src = "logo0" + num + ".jpg";
+	setTimeout("change()",20);
+}
+</script>
+<base target="main">
+</head>
+<body style="background-color: black;" background = "stars.gif">
+<img src = "iitkastro.JPG" style = "position: absolute;left: 100;top: 10;height: 100" />
+</body>
+</html>
